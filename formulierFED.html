@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Formulier</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+   <section id="aanmeldformulier">
+
+        <h1>Aanmelden</h1>
+
+        <p> Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+            lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+        <p><em> CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</em></p>
+        <p> Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+            Voor vragen of opmerkingen kunt u <a href="">contact</a> met ons op.</p>
+
+       <form>
+
+           <fieldset>
+               <legend>Contactgegevens</legend>
+               Naam<br>
+               <input type="text" name="Naam"><br>
+               Bedrijf<br>
+               <input type="text" name="Bedrijf"><br>
+               Adres<br>
+               <input type="text" name="Adres" value="met huisnummer*"><br>
+               Postcode<br>
+               <input type="text" name="Postcode" value="zonder spatie*"><br>
+               Plaats<br>
+               <input type="text" name="Plaats"><br>
+               Telefoon<br>
+               <input type="tel" name="Telefoon"><br>
+               Email<br>
+               <input type="email" name="Email"><br>
+           </fieldset>
+
+               <h3>Ik wil mij aanmelden</h3>
+               <input type="radio" name="Aanmelden" value="Project" checked> Voor een project<br>
+               <input type="radio" name="Aanmelden" value="Stage"> Als een stagebedrijf<br><br>
+
+        </form>
+
+
+      <form>
+
+       <table>
+
+           <tr>
+               <th> Project </th>
+               <th> Stage </th>
+           </tr>
+
+           <tr>
+                <td>
+                        1. Titel<br>
+                        <input type="text" name="Naam"><br>
+                        2. Opdrachtomschrijving<br>
+                        <textarea rows="4" cols="50" name="opdrachtomschr">Max. 50 woorden</textarea><br>
+                        3. Doelgroepomschrijving<br>
+                        <textarea rows="4" cols="50" name="doelgroepomschr">Max. 50 woorden</textarea><br>
+                        4. Doelstelling/ intentie van het project<br>
+                        <textarea rows="4" cols="50" name="doelstelling">Max. 50 woorden</textarea><br>
+                        5. Looptijd<br>
+                        <input type="text" name="looptijd"><br>
+                        6. Deadline <br>
+                        <input type="date" name="deadline"><br>
+                </td>
+
+               <td>
+                   Geschikt voor:<br><br>
+                   <input type="checkbox" name="2dejaar" value="optie1"> Tweedejaars studenten <br>
+                   <input type="checkbox" name="afstudeer" value="optie2"> Afstudeer studenten <br>
+                   <input type="checkbox" name="onbekend" value="optie3"> onbekend <br>
+
+               </td>
+           </tr>
+
+           <tr>
+               <td>
+                   Geschikt voor:<br><br>
+                   <input type="checkbox" name="1ste" value="optie1"> Eerstejaars studenten <br>
+                   <input type="checkbox" name="2de" value="optie2"> Tweede studenten <br>
+                   <input type="checkbox" name="3de" value="optie3"> Derdejaars studenten <br>
+                   <input type="checkbox" name="4de" value="optie3"> Afstudeer studenten <br>
+                   <input type="checkbox" name="onbekend2" value="optie3"> Onbekend <br>
+               </td>
+
+               <td>
+                  1. Hoe lang is de stage? <br><br>
+                   <input type="radio" name="weken" value="10"> 10 weken<br>
+                   <input type="radio" name="weken" value="20"> 20 weken<br><br>
+                   2. Begindatum<br>
+                   <input type="date" name="datum"><br>
+                </td>
+           </tr>
+
+           <tr>
+               <td></td>
+               <td>
+                    Beschrijving werkzaamheden<br>
+                    <textarea rows="4" cols="50" name="werkzaamhedenomschr">Max. 50 woorden</textarea>
+               </td>
+           </tr>
+
+           <tr>
+               <td></td>
+               <td>
+                    Beschrijving Stagebedrijf<br><br>
+                    1. Bedrijfsnaam<br>
+                    <input type="text" name="bedrijf"><br>
+                    2. Adres<br>
+                    <input type="text" name="adres" value="met huisnummer*"><br>
+                    3. Postcode<br>
+                    <input type="text" name="postcode" value="zonder spatie*"><br>
+                    4. Plaats<br>
+                    <input type="text" name="plaats"><br>
+                    5. Sector<br>
+                    <input type="text" name="sector"><br>
+                    6. Core Business<br>
+                    <textarea rows="4" cols="50" name="corebusiness">Max. 50 woorden</textarea><br>
+
+               </td>
+           </tr>
+
+           <tr>
+               <td>
+                   Opmerking<br>
+                   <textarea rows="4" cols="50" name="opmerking1">Max. 50 woorden</textarea>
+               </td>
+
+               <td>
+                   Opmerking<br>
+                   <textarea rows="4" cols="50" name="opmerking1">Max. 50 woorden</textarea>
+               </td>
+           </tr>
+
+
+
+
+       </table>
+
+      </form>
+   </section>
+
+
+</body>
+</html>
