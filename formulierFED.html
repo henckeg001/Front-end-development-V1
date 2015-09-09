@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="nl">
 
 <head>
 
     <meta charset="UTF-8">
     <title>Formulier</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
@@ -14,142 +13,150 @@
 
    <section id="aanmeldformulier">
 
+
         <h1>Aanmelden</h1>
 
         <p> Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
             lopen de studenten stage, in het tweede en afstudeerjaar.</p>
-        <p><em> CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</em></p>
+        <p> CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</p>
         <p> Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
             Voor vragen of opmerkingen kunt u <a href="">contact</a> met ons op.</p>
 
-       <form>
 
-           <fieldset>
+
+        <form>
+           <section id="contactgegevens">
+            <fieldset>
                <legend>Contactgegevens</legend>
-               Naam<br>
-               <input type="text" name="Naam"><br>
-               Bedrijf<br>
-               <input type="text" name="Bedrijf"><br>
-               Adres<br>
-               <input type="text" name="Adres" value="met huisnummer*"><br>
-               Postcode<br>
-               <input type="text" name="Postcode" value="zonder spatie*"><br>
-               Plaats<br>
-               <input type="text" name="Plaats"><br>
-               Telefoon<br>
-               <input type="tel" name="Telefoon"><br>
-               Email<br>
-               <input type="email" name="Email"><br>
+                   <label for="naam">Naam</label>
+                   <input type="text" name="Naam" id="naam">
+
+                   <label for="bedrijf">Bedrijf</label>
+                   <input type="text" name="Bedrijf" id="bedrijf">
+
+                   <label for="Adres">Adres</label>
+                   <input type="text" name="Adres" id="Adres" placeholder="met huisnummer*">
+
+                   <label for="Postcode">Postcode</label>
+                   <input type="text" class="postcode" id="Postcode" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" placeholder="zonder spatie*">
+
+                   <label for="Plaats">Plaats</label>
+                   <input type="text" name="Plaats" id="Plaats">
+
+                   <label for="Telefoon">Telefoon</label>
+                   <input type="tel" name="Telefoon" id="Telefoon">
+
+                   <label for="Email">Email</label>
+                   <input type="email" name="Email" id="Email">
            </fieldset>
+</section>
 
-               <h3>Ik wil mij aanmelden</h3>
-               <input type="radio" name="Aanmelden" value="Project" checked> Voor een project<br>
-               <input type="radio" name="Aanmelden" value="Stage"> Als een stagebedrijf<br><br>
+        <section id="aanmelden">
 
-        </form>
+            <h2>Ik wil mij aanmelden</h2>
 
+               <input type="radio" name="Aanmelden" id="project1" value="Project" checked>
+               <label for="project1">Voor een project</label>
+               <input type="radio" name="Aanmelden" id="stagebedrijf" value="Stage">
+               <label for="stagebedrijf">Als een stagebedrijf</label>
+        </section>
 
-      <form>
+        <section id="project">
+                <fieldset>
+                    <legend>Project</legend>
+                        <label for="titel">1. Titel</label>
+                        <input type="text" id="titel" name="Naam">
 
-       <table>
+                        <label for="opdrachtomschr">2. Opdrachtomschrijving</label>
+                        <textarea rows="4" cols="50" id="opdrachtomschr" name="opdrachtomschr" placeholder="Max. 50 woorden"></textarea>
 
-           <tr>
-               <th> Project </th>
-               <th> Stage </th>
-           </tr>
+                        <label for="doelgroepomschr">3. Doelgroepomschrijving</label>
+                        <textarea rows="4" cols="50" id="doelgroepomschr" name="doelgroepomschr" placeholder="Max. 50 woorden"></textarea>
 
-           <tr>
-                <td>
-                        1. Titel<br>
-                        <input type="text" name="Naam"><br>
-                        2. Opdrachtomschrijving<br>
-                        <textarea rows="4" cols="50" name="opdrachtomschr">Max. 50 woorden</textarea><br>
-                        3. Doelgroepomschrijving<br>
-                        <textarea rows="4" cols="50" name="doelgroepomschr">Max. 50 woorden</textarea><br>
-                        4. Doelstelling/ intentie van het project<br>
-                        <textarea rows="4" cols="50" name="doelstelling">Max. 50 woorden</textarea><br>
-                        5. Looptijd<br>
-                        <input type="text" name="looptijd"><br>
-                        6. Deadline <br>
-                        <input type="date" name="deadline"><br>
-                </td>
+                        <label for="doelstelling">4. Doelstelling/ intentie van het project</label>
+                        <textarea rows="4" cols="50" id="doelstelling" name="doelstelling" placeholder="Max. 50 woorden"></textarea>
 
-               <td>
-                   Geschikt voor:<br><br>
-                   <input type="checkbox" name="2dejaar" value="optie1"> Tweedejaars studenten <br>
-                   <input type="checkbox" name="afstudeer" value="optie2"> Afstudeer studenten <br>
-                   <input type="checkbox" name="onbekend" value="optie3"> onbekend <br>
+                        <label for="looptijd">5. Looptijd</label>
+                        <input type="text" id="looptijd" name="looptijd">
 
-               </td>
-           </tr>
+                        <label for="deadline">6. Deadline</label>
+                        <input type="date" id="deadline" name="deadline">
 
-           <tr>
-               <td>
-                   Geschikt voor:<br><br>
-                   <input type="checkbox" name="1ste" value="optie1"> Eerstejaars studenten <br>
-                   <input type="checkbox" name="2de" value="optie2"> Tweede studenten <br>
-                   <input type="checkbox" name="3de" value="optie3"> Derdejaars studenten <br>
-                   <input type="checkbox" name="4de" value="optie3"> Afstudeer studenten <br>
-                   <input type="checkbox" name="onbekend2" value="optie3"> Onbekend <br>
-               </td>
+                      Geschikt voor:
+                        <input type="checkbox" name="1ste" id="1ste" value="optie1">
+                        <label for="1ste">Eerstejaars studenten</label>
 
-               <td>
-                  1. Hoe lang is de stage? <br><br>
-                   <input type="radio" name="weken" value="10"> 10 weken<br>
-                   <input type="radio" name="weken" value="20"> 20 weken<br><br>
-                   2. Begindatum<br>
-                   <input type="date" name="datum"><br>
-                </td>
-           </tr>
+                        <input type="checkbox" name="2de" id="2de" value="optie2">
+                        <label for="2de">Tweedejaars studenten</label>
 
-           <tr>
-               <td></td>
-               <td>
-                    Beschrijving werkzaamheden<br>
-                    <textarea rows="4" cols="50" name="werkzaamhedenomschr">Max. 50 woorden</textarea>
-               </td>
-           </tr>
+                        <input type="checkbox" name="3de" id="3de" value="optie3">
+                        <label for="3de">Derdejaars studenten</label>
 
-           <tr>
-               <td></td>
-               <td>
-                    Beschrijving Stagebedrijf<br><br>
-                    1. Bedrijfsnaam<br>
-                    <input type="text" name="bedrijf"><br>
-                    2. Adres<br>
-                    <input type="text" name="adres" value="met huisnummer*"><br>
-                    3. Postcode<br>
-                    <input type="text" name="postcode" value="zonder spatie*"><br>
-                    4. Plaats<br>
-                    <input type="text" name="plaats"><br>
-                    5. Sector<br>
-                    <input type="text" name="sector"><br>
-                    6. Core Business<br>
-                    <textarea rows="4" cols="50" name="corebusiness">Max. 50 woorden</textarea><br>
+                        <input type="checkbox" name="4de" id="afstudeer" value="optie3">
+                        <label for="afstudeer">Afstudeerstudenten</label>
 
-               </td>
-           </tr>
+                        <input type="checkbox" name="onbekend2" id="onbekend2" value="optie3">
+                        <label for="onbekend2">Onbekend</label>
 
-           <tr>
-               <td>
-                   Opmerking<br>
-                   <textarea rows="4" cols="50" name="opmerking1">Max. 50 woorden</textarea>
-               </td>
+                        <label for="opmerking">Opmerking</label>
+                        <textarea rows="4" cols="50" name="opmerking1" id="opmerking" placeholder="Max. 50 woorden"></textarea>
+                </fieldset>
 
-               <td>
-                   Opmerking<br>
-                   <textarea rows="4" cols="50" name="opmerking1">Max. 50 woorden</textarea>
-               </td>
-           </tr>
+    </section>
 
+    <section id="stage">
+                <fieldset>
+                   <legend>Stage</legend>
 
+                   Geschikt voor:
+                   <input type="checkbox" name="2dejaar" id="2dejaars" value="optie1">
+                   <label for="2dejaars">Tweedejaars studenten</label>
 
+                   <input type="checkbox" name="afstudeer" id="afstuderen" value="optie2">
+                   <label for="afstuderen">Afstudeer studenten</label>
 
-       </table>
+                   <input type="checkbox" name="onbekend" id="onbekend1" value="optie3">
+                   <label for="onbekend1">Onbekend</label>
 
+                   1. Hoe lang is de stage?
+                   <input type="radio" name="weken" id="10" value="10" checked>
+                   <label for="10"> 10 weken</label>
+
+                   <input type="radio" name="weken" id="20" value="20">
+                   <label for="20">20 weken</label>
+
+                   <label for="begindatum">2. Begindatum</label>
+                   <input type="date" id="begindatum" name="datum">
+
+                    <label for="beschrijving">Beschrijving werkzaamheden</label>
+                    <textarea rows="4" cols="50" name="werkzaamhedenomschr" id="beschrijving" placeholder="Max. 50 woorden"></textarea>
+
+                    Beschrijving Stagebedrijf
+                    <label for="bedrijf1">1. Bedrijfsnaam</label>
+                    <input type="text" id="bedrijf1" name="bedrijf">
+
+                    <label for="adres2">2. Adres</label>
+                    <input type="text" id="adres2" name="adres" placeholder="Met huisnummer*">
+
+                    <label for="postcode2">3. Postcode</label>
+                    <input type="text" name="postcode" id="postcode2" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}">
+
+                    <label for="plaats2">4. Plaats</label>
+                    <input type="text" id="plaats2" name="plaats">
+
+                    <label for="sector">5. Sector</label>
+                    <input type="text" id="sector" name="sector">
+
+                    <label for="core">6. Core Business</label>
+                    <textarea rows="4" cols="50" id="core" name="corebusiness" placeholder="Max. 50 woorden"></textarea>
+
+                    <label for="opmerking2">Opmerking</label>
+                    <textarea rows="4" cols="50" id="opmerking2" name="opmerking1" placeholder="Max. 50 woorden"></textarea>
+                </fieldset>
+            </section>
+        <input type="submit" value="Versturen">
       </form>
-   </section>
-
+</section>
 
 </body>
 </html>
